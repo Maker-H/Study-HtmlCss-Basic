@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML DOC</title>
+        <style>
+         /* div{
+            width: 100px; height: 100px; position: relative;
+         }
+         .first{
+            background-color:  teal;
+         }
+         .second{
+            background-color: bisque;
+            bottom: 50px;
+         }
+         .third{
+            background-color: brown;
+            bottom: 100px;
+         }
+         .fourth{
+            background-color: black;
+            bottom: 150px;
+         } */
+
+         div{
+            box-sizing: border-box;
+            width: 100px; height: 100px; position: relative;
+            font-size: 20px;
+            padding: 10px;
+         }
+         div:nth-child(1){background-color: brown;}
+         div:nth-child(2){background-color: yellow; bottom: 50px;}
+         div:nth-child(3){background-color: cyan; bottom: 100px;}
+         div:nth-child(4){background-color: black; bottom:150px;}
+
+         .first{ z-index: 1; }
+         .second{ z-index: 0;}
+        </style>
+    </head>
+    <body>
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="fourth">4</div>
+    </body>
+</html>
