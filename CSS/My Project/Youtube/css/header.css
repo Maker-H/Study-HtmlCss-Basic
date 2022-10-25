@@ -1,0 +1,101 @@
+.header{
+    position: fixed; /*페이지 스크롤 할 때 헤더가 계속 보일 수 있게 고정*/
+    top: 0;
+    left: 70px;
+    width: calc(100% - 70px);
+    background-color: white;
+    border-bottom: 1px silver solid;
+    z-index: 20; /*다른 요소랑 겹쳐도 위에 보일 수 있게끔*/
+
+}
+
+.header-wrapper{
+    height: 60px; /*헤더 안의 박스 만들어서 플렉스 역할*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+
+}
+
+.header-left{
+    height: 40px; 
+    line-height: 40px;/*요소가 차지하는 공간도 40px로 주자. 그러면 align-item이 center로 정 가운데 오게 됨*/
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.header-compass{
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: red;
+    padding: 0 4px 0 0;
+    height: 40px;
+    line-height: 40px;
+}
+.header-title{
+    font-size: 1.2rem;
+    font-weight:800;
+    color: red;   
+}
+
+
+
+.header-center{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.header-form{
+    display: flex;
+    width: 100%;
+}
+.header-input-text{
+    width: 80%;
+    border-radius: 0;
+    border: 1px gainsboro solid;
+    border-right: 0;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 6px;
+}
+
+.header-input-text:focus{
+    width: 80%;
+    border-radius: 0;
+    border: 1px blue solid;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 6px;
+}
+.header-input-button{
+    width: 55px;
+    border-radius: 0;
+    border: 1px solid gainsboro;
+    height: 40px;
+}
+
+
+
+.header-right{
+    margin-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+}
+.header-search{
+    background-color: transparent;
+    font-size: 1.7rem;
+    border: none;
+    padding: 0;
+    color: slategrey;
+}
+
+@media screen and (max-width:238px) {
+    .header-input-text{ display: none; }
+}
+@media screen and (max-width: 792px) {
+    .header{left: 0; width: 100%;}
+}

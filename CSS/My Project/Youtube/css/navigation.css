@@ -1,0 +1,113 @@
+.navigation{
+    position: fixed;
+    left: 0; top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70px;
+    z-index: 21;
+}
+.navigation-menu{
+    width: inherit;
+    height: 58px;
+
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-hamberger{
+    font-size: 1.2rem;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: silver;
+}
+
+.navigation-wrapper {
+    margin-top: 6px;
+    height: 320px;
+    width: inherit;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45px; height: 60px;
+}
+.navigation-home-text{
+    font-size: 0.6rem;
+}
+.navigation-home-icon{
+    font-size: 1.1rem;
+    border: none;
+    background-color: transparent;
+}
+
+
+.navigation-shorts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45px; height: 60px;
+    padding:0;
+    
+}
+.navigation-shorts-icon{
+    font-size: 1.1rem;
+    border: none;
+    background-color: transparent;
+}
+.navigation-shorts-text{
+    font-size: 0.6rem;
+}
+
+
+.navigation-subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45px; height: 60px;
+}
+.navigation-subscribe-text{
+    font-size: 0.6rem;
+}
+.navigation-subscribe-icon{
+    font-size: 1.1rem;
+    border: none;
+    background-color: transparent;
+}
+
+
+.navigation-storage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45px; height: 60px;
+}
+.navigation-storage-text{
+    font-size: 0.6rem;
+}
+.navigation-storage-icon{
+    font-size: 1.1rem;
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 792px) {
+    .navigation{display: none;}
+}
